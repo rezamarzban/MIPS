@@ -19,7 +19,7 @@ void f(){
 	a=1; a=1; a=1; a=1; a=1; a=1; a=1; a=1; a=1; a=1;
 	}
 
-void g(){
+void g(){ //each f() function is 100 instructions, So g() function is 100×100 = 10,000 instructions:
 	f(); f(); f(); f(); f(); f(); f(); f(); f(); f();
 	f(); f(); f(); f(); f(); f(); f(); f(); f(); f();
 	f(); f(); f(); f(); f(); f(); f(); f(); f(); f();
