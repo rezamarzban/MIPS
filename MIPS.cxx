@@ -32,7 +32,7 @@ void g(){ //each f() function is 100 instructions, So g() function is 100×100 =
 	f(); f(); f(); f(); f(); f(); f(); f(); f(); f();
 }
 
-void h(){
+void h(){ //each g() function is 10,000 instructions, So h() function is 100×10,000 = 1,000,000 instructions.
 	g(); g(); g(); g(); g(); g(); g(); g(); g(); g();
 	g(); g(); g(); g(); g(); g(); g(); g(); g(); g();
 	g(); g(); g(); g(); g(); g(); g(); g(); g(); g();
@@ -45,7 +45,7 @@ void h(){
 	g(); g(); g(); g(); g(); g(); g(); g(); g(); g();
 	}
 		
-void x(){
+void x(){ //each h() function is 1,000,000 instructions, So each x() function is 100×1,000,000 = 100,000,000 instructions.
 	h(); h(); h(); h(); h(); h(); h(); h(); h(); h();
 	h(); h(); h(); h(); h(); h(); h(); h(); h(); h();
 	h(); h(); h(); h(); h(); h(); h(); h(); h(); h();
