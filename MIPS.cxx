@@ -83,7 +83,7 @@ void mips(int thread_number){
 	std::cout << ((i/(end - start))/1000000);
 	std::cout << " from t=";
 	std::cout << start;
-	std::cout << " in ";
+	std::cout << " s measured in ";
 	std::cout << (end-start);
 	std::cout << " s. \n";
 }
