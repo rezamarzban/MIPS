@@ -66,7 +66,7 @@ void mips(int thread_number){
 	start = time(NULL);
 	
 	while(i < 50000000000){
-		i=i+10000000000;
+		i=i+10000000000; //10,000,000,000 instructions at each loop.
 		j=0;
 		while(j<10){ //Do 100 times x() function = 100×100,000,000 instructions = 10,000,000,000 instructions.
 			x(); x(); x(); x(); x();
