@@ -90,7 +90,7 @@ void mips(int thread_number){
 	
 int main()
 {
-	
+	//You can increase or decrease threads number according to CPU cores number at below line
 	int i, n_threads= 8;
 	
 	std::vector<std::thread> threads;
