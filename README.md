@@ -1,5 +1,5 @@
 # MIPS
-measure (multi thread) process MIPS with C++
+measure (multi thread) CPU process MIPS with C++
 
 Run these commands to building and runing binary:
 
