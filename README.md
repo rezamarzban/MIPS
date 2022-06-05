@@ -7,4 +7,4 @@ Run these commands to building and runing binary:
 
 "./MIPS"
 
-Also can be compiled in "Cxxdroid" Android application.
+MIPS.cxx can be compiled in "Cxxdroid" Android application also.
