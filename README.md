@@ -1,8 +1,10 @@
 # MIPS
-measure (multi thread) process with C++
+measure (multi thread) process MIPS with C++
 
 Run these commands to building and runing binary:
 
 "clang++ -o MIPS MIPS.cxx"
 
 "./MIPS"
+
+Also can be compiled in "Cxxdroid" Android application.
