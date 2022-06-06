@@ -83,22 +83,22 @@ void mips(int thread_number){
 	std::cout << ((i/(end - start))/1000000); //MIPS = Number of instructions divide to differential time divide to 1,000,000.
 	std::cout << " from t=";
 	std::cout << start;
-	std::cout << " s measured in ";
+	std::cout << "s measured in ";
 	std::cout << (end-start);
-	std::cout << " s. \n";
+	std::cout << "s. \n";
 }
 	
 int main()
 {
-	//You can increase or decrease threads number according to CPU cores number at below line
+	//You can increase or decrease threads number according to the CPU cores count at below:
 	int i, n_threads= 8;
-	//Vectors of threads defination
+	//Create a vector of threads.
 	std::vector<std::thread> threads;
-	//Create number of threads
+	//Add number of threads object to the vector.
 	for(i=0;i<n_threads;i++){
 		threads.push_back(std::thread(mips, i));
 	}
-	//Join each thread
+	//Iterate over the thread vector to joining each thread object.
 	for(std::thread & th : threads){
 		th.join();
 	}
