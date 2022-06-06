@@ -63,7 +63,7 @@ void mips(int thread_number){
 	int j;
 	time_t start, end;
 	
-	start = time(NULL);
+	start = time(NULL); //process start time.
 	
 	while(i < 50000000000){ //optional number, which process goes through out this and get the process time. Then calculate how many number of this per second occurred.
 		i=i+10000000000; //10,000,000,000 instructions at this loop will occur.
@@ -75,7 +75,7 @@ void mips(int thread_number){
 		}
 	}
 	
-	end = time(NULL);
+	end = time(NULL); //process end time.
 	
 	std::cout << "Thread ";
 	std::cout << thread_number;
@@ -102,7 +102,7 @@ int main()
 	for(std::thread & th : threads){
 		th.join();
 	}
-	//Method 2 is equal to above vector commands while n_threads  16:
+	//Method 2 is equal to above vector commands while n_threads = 16:
 	/*
 	std::thread th1(mips, 1);
 	std::thread th2(mips, 2);
