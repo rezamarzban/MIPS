@@ -102,7 +102,7 @@ int main()
 	for(std::thread & th : threads){
 		th.join();
 	}
-	//Method 2:
+	//Method 2 is equal to above vector commands while n_threads  16:
 	/*
 	std::thread th1(mips, 1);
 	std::thread th2(mips, 2);
