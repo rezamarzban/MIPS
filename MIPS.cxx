@@ -65,8 +65,8 @@ void mips(int thread_number){
 	
 	start = time(NULL);
 	
-	while(i < 50000000000){
-		i=i+10000000000; //10,000,000,000 instructions at each loop.
+	while(i < 50000000000){ //optional number, which process goes through out this and get the process time. Then calculate how many number of this per second occurred.
+		i=i+10000000000; //10,000,000,000 instructions at this loop will occur.
 		j=0;
 		while(j<10){ //Do 100 times x() function = 100×100,000,000 instructions = 10,000,000,000 instructions.
 			x(); x(); x(); x(); x();
@@ -90,7 +90,7 @@ void mips(int thread_number){
 	
 int main()
 {
-	//You can increase or decrease threads number according to the CPU cores count at below:
+	//You can increase or decrease threads number according to the number of CPU cores at below:
 	int i, n_threads= 8;
 	//Create a vector of threads.
 	std::vector<std::thread> threads;
