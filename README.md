@@ -10,4 +10,4 @@ Run these commands to building and runing binary:
 Run this code at below online compiler:
 https://rextester.com/HQA96838
 
-If you want put CPU in stress and measure the real maximum MIPS use MIPS-old.cxx code.
+If you want put CPU in stress and measure the real maximum MIPS, use MIPS-old.cxx code instead.
