@@ -61,17 +61,17 @@ void x(){ //each h() function is 1,000,000 instructions, So each x() function is
 void mips(int thread_number){
 	
 	uint64_t start = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::now().time_since_epoch())
-            .count(); //process start time in nano seconds.
+            .count(); //Process start time in nano seconds.
 
-	x(); //do 100,000,000 instructions.
+	x(); //Do 100,000,000 instructions.
 	
 	uint64_t end = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::now().time_since_epoch())
-            .count(); //process end time in nano seconds.
+            .count(); //Process end time in nano seconds.
 	
 	std::cout << "Thread ";
 	std::cout << thread_number;
 	std::cout << ", MIPS: ";
-	std::cout << (100000000000/(end - start)); //calculate MIPS.
+	std::cout << (100000000000/(end - start)); //Calculate MIPS (Mega Instructions Per Second).
 	std::cout << " measured in ";
 	std::cout << (end-start);
 	std::cout << "ns. \n";
