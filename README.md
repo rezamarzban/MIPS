@@ -6,3 +6,6 @@ Run these commands to building and runing binary:
 "clang++ -pthread -o MIPS MIPS.cxx"
 
 "./MIPS"
+
+Run this code at below online compiler:
+https://rextester.com/MHZAB95833
